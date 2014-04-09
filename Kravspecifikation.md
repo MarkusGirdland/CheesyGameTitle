@@ -99,3 +99,22 @@ välja att läsa reglerna.
 **Kv3 Webbläsare**
 
 Cheesy Game Title skall kunna köras på en rimlig andel webbläsare och dess olika versioner.
+
+
+## Krav som skall implementeras
+### (Kommer brytas ner i mindre mål i tidsrapporterna)
+
+- Regler för spelet ska skrivas
+- Kort som finns i spelet skall skrivas
+- Grafiken
+- Skapa meny
+- Skapa läsbara regler i menyn
+- Programmera class för spelare
+- Programmera class för monster
+- Programmera kort
+- Programmera händelser för specifika kort
+- Programmera en runda
+- Gör så karaktären rör sig framåt för varje runda
+- Programmera ostrutan
+
+#### Mer kan tillkomma
