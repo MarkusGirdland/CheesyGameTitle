@@ -14,6 +14,8 @@ Kort
 
 Ostrutan
 
+There and back again...
+
 ## Introduktion
 
 Spelets mål är att, inne i huset, nå osten. Spelet kommer ha 7* steg där det sjunde steget är själva ostrutan. Man rör sig ett steg varje rond och för varje steg så drar man ett kort som kommer förklaras under sin egna rubrik längre ner. Kortfattat kan man säga att korten innehåller olika faror eller föremål som man ska klara av för att ta sig till osten. Väl vid osten ska man varje drag sno på sig så mycket ost som möjligt utan att väcka huskatten, för varje drag du snor ost och inte väcker katten så ökar risken för att katten ska vakna. Man måste alltså balansera risken mot belöningen. När man är nöjd med hur mycket ost man har ska man gå tillbaka till sitt hål i väggen och man får därefter poäng beroende på hur mycket ost du lyckades få. 
