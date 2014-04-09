@@ -113,13 +113,13 @@ Din karaktär får 3 intelligens.
 Stöter man på en fälla så kan man undvika dom beroende på olika attribut din karaktär har. Undviker man dom inte måste man gå igenom dess konsekvenser.
 
 #### Musfälla
-Du går in i musfällan och tar 2 skada, om du inte slår med eller lika med din styrka och lyckas böja bort fällan.
+Du går in i musfällan och tar 4 skada, om du inte slår med eller lika med din styrka och lyckas böja bort fällan.
 
 #### Kvast-attack!
-Du blir slagen av kvasten och tar 2 skada, om du inte slår med eller lika med din smidighet och lyckas undvika attacken.
+Du blir slagen av kvasten och tar 4 skada, om du inte slår med eller lika med din smidighet och lyckas undvika attacken.
 
 #### Råttgift
-Du äter giftet och tar 2 skada, om du inte slår med eller lika med din intelligens och lyckas undvika fällan.
+Du äter giftet och tar 4 skada, om du inte slår med eller lika med din intelligens och lyckas undvika fällan.
 
 ## Ostrutan
 
