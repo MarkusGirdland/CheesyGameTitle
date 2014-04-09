@@ -28,20 +28,20 @@ Kraven ordnade i nummerordning.
 
 ###Funktionella Krav
 
-F1 Gå in på hemsidan
+####F1 Gå in på hemsidan
 
 Spelare måste gå in på hemsidan och börja en spelsession.
 
-Användningsfall
-1 Spelare
+####Användningsfall
+**1 Spelare**
 
 AF1.1 Spelsesssion
 
-2 Support*
+**2 Support***
 
 AF2.1 Svara på forum*
 
-3 Administratör*
+**3 Administratör***
 
 AF3.1 Hantera forum*
 
@@ -49,13 +49,13 @@ AF3.1 Hantera forum*
 
 ### Testfall, AF1.1
 
-En spelare vill se spela spelet.
+En spelare vill spela spelet.
 
 ####Huvudscenario
 
 - Starar när en spelaren vill starta en spelsession. (1a)
 
-- Systemet ber spelaren väljer i menyn att starta spelet.
+- Systemet ber spelaren välja i menyn för att starta spelet.
 
 - Systemet presenterar en eller flera karaktärer att välja mellan. (1b)
 
@@ -64,32 +64,38 @@ En spelare vill se spela spelet.
 
 ####Alternativa scenarios
 
-1a. Hemsidan ligger nere
+**1a. Hemsidan ligger nere**
 
-Systemet presenterar felmeddelande, troligen 404.
-Gå till steg 1 i huvudscenario.
+- Systemet presenterar felmeddelande, troligen 404.
+
+- Gå till steg 1 i huvudscenario.
 
 
-1b. Hemsidan har eventuella problem med spelet
+**1b. Hemsidan har eventuella problem med spelet**
 
-Systemet presenterar meddelande om att systemtekniska fel uppstått angående hemsidans data.
-Systemet presenterar ett till meddelande om att uppdatera sidan och börja om igen.
-Gå till steg 1 i huvudscenario.
+- Systemet presenterar meddelande om att systemtekniska fel uppstått angående hemsidans data.
+
+- Systemet presenterar ett till meddelande om att uppdatera sidan och börja om igen.
+
+- Gå till steg 1 i huvudscenario.
 
 
 ##Kvalitetskrav
 ###Användbarhet
 
-Kv1 Grafisk Utformning
+**Kv1 Grafisk Utformning**
+
 Cheesy Game Title skall grafiskt utformas till att ha ett roligt, färgglatt samt enhetligt utseende.
 
 ###Förståelse
 
-Kv2 Enkla texter 
+**Kv2 Enkla texter**
+
 Cheesy Game Title skall på ett enkelt sätt förmedla vad de olika korten gör och även ha en meny där man kan
 välja att läsa reglerna.
 
 ###Stödbarhet
 
-Kv3 Webbläsare
+**Kv3 Webbläsare**
+
 Cheesy Game Title skall kunna köras på en rimlig andel webbläsare och dess olika versioner.
