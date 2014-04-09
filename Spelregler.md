@@ -7,10 +7,14 @@ Introduktion
 Karaktärer
 
 Kort
--Tomt
--Monsterkort
--Föremålskort
--Fällkort
+
+- Tomt
+
+- Monsterkort
+
+- Föremålskort
+
+- Fällkort
 
 Ostrutan
 
