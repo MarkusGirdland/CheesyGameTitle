@@ -7,7 +7,7 @@
 
 Kraven ordnade i nummerordning.
 
-Aktörer
+####Aktörer
 1, Primära aktörer
 
 Spelare; Vill komma in på sidan och spela spelet utan problem. Använder spelet mest av alla.
