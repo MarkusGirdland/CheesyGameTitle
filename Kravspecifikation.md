@@ -10,18 +10,21 @@ Kraven ordnade i nummerordning.
 ####Aktörer
 1, Primära aktörer
 
-Spelare; Vill komma in på sidan och spela spelet utan problem. Använder spelet mest av alla.
-Support; Vill enkelt kunna komma åt ett forum för att hjälpa folk med eventuella problem man kan ha med spelet.
+**Spelare**; Vill komma in på sidan och spela spelet utan problem. Använder spelet mest av alla.
+
+**Support**; Vill enkelt kunna komma åt ett forum för att hjälpa folk med eventuella problem man kan ha med spelet.
 
 2, Stödjande aktörer
 
-Framtida utvecklare; Vill ha en bra strukturerad hemsida som man enkelt kan bygga på med mer innehåll.
-Administratör; Vill kunna ha verktyg för att kunna överse sitt område av appen, exempelvis forumet där man kan ställa frågor.
+**Framtida utvecklare**; Vill ha en bra strukturerad hemsida som man enkelt kan bygga på med mer innehåll.
+
+**Administratör**; Vill kunna ha verktyg för att kunna överse sitt område av appen, exempelvis forumet där man kan ställa frågor.
 
 3, Offstage aktörer
 
-Apples Appstore; Vissa krav ställs på appen för att den ska få säljas i deras digitala affär.
-Facebook; Eventuell senarelagd integration med Facebook för att enkelt kunna dela sina framsteg ställer krav på uppbyggnaden av hemsidan.
+**Apples Appstore**; Vissa krav ställs på appen för att den ska få säljas i deras digitala affär.
+
+**Facebook**; Eventuell senarelagd integration med Facebook för att enkelt kunna dela sina framsteg ställer krav på uppbyggnaden av hemsidan.
 
 ###Funktionella Krav
 
