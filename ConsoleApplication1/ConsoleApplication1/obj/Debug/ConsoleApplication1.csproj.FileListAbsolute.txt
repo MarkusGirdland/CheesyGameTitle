@@ -1,0 +1,5 @@
+C:\Users\Markus\Documents\GitHub\CheesyGameTitle\ConsoleApplication1\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe.config
+C:\Users\Markus\Documents\GitHub\CheesyGameTitle\ConsoleApplication1\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
+C:\Users\Markus\Documents\GitHub\CheesyGameTitle\ConsoleApplication1\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
+C:\Users\Markus\Documents\GitHub\CheesyGameTitle\ConsoleApplication1\ConsoleApplication1\obj\Debug\ConsoleApplication1.exe
+C:\Users\Markus\Documents\GitHub\CheesyGameTitle\ConsoleApplication1\ConsoleApplication1\obj\Debug\ConsoleApplication1.pdb
