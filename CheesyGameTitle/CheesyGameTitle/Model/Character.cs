@@ -14,6 +14,7 @@ namespace CheesyGameTitle
         private int strength;
         private int intelligence;
         private string name;
+        private int maxHealth;
 
         // ============== Access ===================
 
@@ -47,6 +48,11 @@ namespace CheesyGameTitle
             return name;
         }
 
+        public int getMaxHealth()
+        {
+            return maxHealth;
+        }
+
         // ============== Konstruktor ===================
 
         public Character(int value)
@@ -57,6 +63,7 @@ namespace CheesyGameTitle
                 agility = 3;
                 intelligence = 2;
                 health = 10;
+                maxHealth = 10;
                 name = "Roger Råtta";
             }
 

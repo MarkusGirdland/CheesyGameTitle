@@ -123,6 +123,7 @@
   <ItemGroup>
     <Content Include="Default.aspx" />
     <Content Include="Images\6.jpg" />
+    <Content Include="Images\Attack.jpg" />
     <Content Include="Images\KommerSnart.jpg" />
     <Content Include="Images\NewTurn.png" />
     <Content Include="Images\PlaceHolder.jpg" />
