@@ -5,7 +5,7 @@ using System.Web;
 
 namespace CheesyGameTitle
 {
-    public enum CardType
+    public enum CardType            // Typ av kort
     {
         Empty = 1,
         Monster,
@@ -85,6 +85,18 @@ namespace CheesyGameTitle
         {
             return description;
         }
+
+        public int GetActionCode()
+        {
+            return actionCode;
+        }
+
+       /* public int GetHighestAttribute()
+        {
+            int maxValue = Math.Max(strength, Math.Max(intelligence, agility));
+
+            return maxValue;
+        } */
 
         // ============== Metoder ===================
 
@@ -248,21 +260,21 @@ namespace CheesyGameTitle
                 if (randomTrap == 1)
                 {
                     name = "Musfälla";
-                    description = "Du går in i musfällan och tar 4 skada. Om du slår med eller lika med din styrka lyckas du böja bort fällan.";
+                    description = "Du går in i musfällan och tar 4 skada. Om du slår under eller lika med din styrka lyckas du böja bort fällan.";
                     actionCode = 6;
                 }
 
                 if (randomTrap == 2)
                 {
                     name = "Kvast-attack!";
-                    description = "Du blir slagen av en kvast och tar 4 skada. Om du slår med eller lika med din smidighet lyckas du undvika attacken.";
+                    description = "Du blir slagen av en kvast och tar 4 skada. Om du slår under eller lika med din smidighet lyckas du undvika attacken.";
                     actionCode = 7;
                 }
 
                 if (randomTrap == 3)
                 {
                     name = "Råttgift";
-                    description = "Du är dum nog att äta råttgift och tar 4 skada. Om du slår med eller lika med din intelligens kommer du på bättre tankar.";
+                    description = "Du är dum nog att äta råttgift och tar 4 skada. Om du slår under eller lika med din intelligens kommer du på bättre tankar.";
                     actionCode = 8;
                 }
             }

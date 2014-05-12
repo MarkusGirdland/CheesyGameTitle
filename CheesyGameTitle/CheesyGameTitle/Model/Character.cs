@@ -15,6 +15,7 @@ namespace CheesyGameTitle
         private int intelligence;
         private string name;
         private int maxHealth;
+        private int turns;
 
         // ============== Access ===================
 
@@ -33,14 +34,29 @@ namespace CheesyGameTitle
             return agility;
         }
 
+        public void setAgility(int value)
+        {
+            agility = value;
+        }
+
         public int getStrength()
         {
             return strength;
         }
 
+        public void setStrength(int value)
+        {
+            strength = value;
+        }
+
         public int getIntelligence()
         {
             return intelligence;
+        }
+
+        public void setIntelligence(int value)
+        {
+            intelligence = value;
         }
 
         public string getName()
@@ -51,6 +67,16 @@ namespace CheesyGameTitle
         public int getMaxHealth()
         {
             return maxHealth;
+        }
+
+        public int getTurns()
+        {
+            return turns;
+        }
+
+        public void plusTurn()
+        {
+            turns++;
         }
 
         // ============== Konstruktor ===================

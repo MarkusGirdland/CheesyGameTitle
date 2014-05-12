@@ -22,6 +22,15 @@ namespace CheesyGameTitle {
         protected global::System.Web.UI.HtmlControls.HtmlHead Head1;
         
         /// <summary>
+        /// body control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl body;
+        
+        /// <summary>
         /// form1 control.
         /// </summary>
         /// <remarks>
@@ -76,6 +85,15 @@ namespace CheesyGameTitle {
         protected global::System.Web.UI.WebControls.ImageButton NewTurnButton;
         
         /// <summary>
+        /// CheeseButton control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ImageButton CheeseButton;
+        
+        /// <summary>
         /// CardHeader control.
         /// </summary>
         /// <remarks>
@@ -92,6 +110,15 @@ namespace CheesyGameTitle {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label CardText;
+        
+        /// <summary>
+        /// cardImage control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Image cardImage;
         
         /// <summary>
         /// PlayerBox control.
@@ -119,5 +146,41 @@ namespace CheesyGameTitle {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label CombatBox;
+        
+        /// <summary>
+        /// CombatLog control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label CombatLog;
+        
+        /// <summary>
+        /// TryAgainButton control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ImageButton TryAgainButton;
+        
+        /// <summary>
+        /// ratCharacter control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Image ratCharacter;
+        
+        /// <summary>
+        /// bodyDiv control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl bodyDiv;
     }
 }

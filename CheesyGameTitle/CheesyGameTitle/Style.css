@@ -8,3 +8,147 @@
     height: 300px;
     overflow: auto;
 }
+
+.bodyDiv {
+   background-image: url("~/Images/bakgrund.jpg");
+   background-repeat: no-repeat;
+   width: 500px;
+   height: 500px;
+   border: 1px solid black;
+}
+
+#bodyDiv {
+    background-image: url("~/Images/bakgrund.jpg");
+   background-repeat: no-repeat;
+   width: 500px;
+   height: 500px;
+   border: 1px solid black;
+}
+
+.body {
+    background-image:url("../Images/bakgrund.jpg");
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+    background-position: center;
+    overflow: auto;
+}
+
+#ratCharacter {
+    height: 150px;
+    width: 200px;
+    top: 35%;
+    left: 5%;
+    position: fixed;
+    z-index: 0;
+}
+
+#CardHeader {
+    top: 50%;
+    left: 45%;
+    position: fixed;
+    z-index: 1;
+}
+
+#CardText {
+    top: 65%;
+    left: 45%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+}
+
+#cardImage {
+    height: 300px;
+    width: 200px;
+}
+
+.cardDiv {
+    top: 50%;
+    left: 45%;
+    position: fixed;
+
+    -webkit-animation: fadein 2s; /* Safari and Chrome */
+    -moz-animation: fadein 2s; /* Firefox */
+    -ms-animation: fadein 2s; /* Internet Explorer */
+    -o-animation: fadein 2s; /* Opera */
+    animation: fadein 2s;
+
+    -webkit-transition: 1s ease-in-out;
+    -moz-transition: 1s ease-in-out;
+    -o-transition: 1s ease-in-out;
+    transition: 1s ease-in-out;
+
+    text-align: center;
+}
+
+.cardDiv:hover {
+    -webkit-transform: rotate(360deg) scale(2);
+    -moz-transform: rotate(360deg) scale(2);
+    -o-transform: rotate(360deg) scale(2);
+    -ms-transform: rotate(360deg) scale(2);
+    transform: rotate(360deg) scale(2);
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari and Chrome */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}​
+
+/* Opera */
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}​
+
+
+/*					{ margin: 0; padding: 0; }
+body				{ font-size: 62.5%; font-family: Georgia, serif; }
+.floatLeft 			{ float: left; }
+.floatRight			{ float: right; }
+.clear				{ clear: both; }
+.layoutCenter		{ margin: 0 auto; }
+.textCenter			{ text-align: center; }
+.textRight			{ text-align: right; }
+.textLeft			{ text-align: left; }
+.hide				{ display: none; }
+.show				{ display: block; }
+.invisible			{ visibility: hidden; }
+
+p, label			{ font-size: 1.3em; line-height: 1.3em; }
+
+div#page-wrap		{ width: 500px; margin: 20px auto; }
+
+p					{ padding-right: 80px; position: relative; margin-bottom: 1.0em;}
+.top				{ position: absolute; bottom: 0; right: 0; }
+
+.home				{ position: absolute; top: 0; right: 0; }
+
+.notice				{ background: #ffdfdf; padding: 10px 0 0 80px; border: 1px solid red; 
+					  position: relative; min-height: 70px; font-size: 150%; }
+.close				{ position: absolute;  left: 0; top: 0; }
+
+form				{ padding-right: 80px; margin-bottom: 20px; }
+fieldset		{ padding: 10px; position: relative; }
+label				{ display: block; float: left; width: 120px; }
+input, textarea		{ margin-bottom: 5px; }
+legend				{ font-size: 1.8em; }
+    
+.signin				{ position: absolute; top: -18px; right: 12px; } */

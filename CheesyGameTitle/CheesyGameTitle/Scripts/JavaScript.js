@@ -1,17 +1,7 @@
 ﻿"using strict";
 
-var myApp = {
 
-    init: function () {
+window.onload = function () {
 
-        function jsfunction() {
-            return false;
-        }
-
-
-    }
-};
-
-
-
-window.onload = myApp.init;
+        
+}
