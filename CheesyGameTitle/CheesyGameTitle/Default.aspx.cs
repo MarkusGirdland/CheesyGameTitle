@@ -8,13 +8,12 @@ using System.Web.UI.WebControls;
 namespace CheesyGameTitle
 {
     public partial class _Default : Page
-    {
-        int SCORE = 0;
-
+    { 
         protected void Page_Load(object sender, EventArgs e)
         {
             RatButton.Visible = false;
             bodyDiv.Visible = false;
+            
         }
 
         protected void StartButton_Click(object sender, EventArgs e)
@@ -65,19 +64,19 @@ namespace CheesyGameTitle
 
             int turn = prevObj.getTurns();
 
-            if (turn == 6)
+            if (turn == 6)          // På ostrutan
             {
                 CheeseButton.Visible = true;
                 ratCharacter.Style.Add("left", "70%");
             }
 
-            if(turn == 7)
+            if(turn == 7)           
             {
                 ratCharacter.ImageUrl = "../Images/råtta.png";
                 ratCharacter.Style.Add("left", "70%");
             }
 
-            if (turn != 6 && turn < 6)
+            if (turn != 6 && turn < 6)      // På väg dit
             {
                 int pixels = (200 * turn);
                 string pixelString = pixels.ToString();
@@ -89,7 +88,7 @@ namespace CheesyGameTitle
                 Session["PrevObject"] = prevObj;
             }
 
-            if (turn != 6 && turn > 6)
+            if (turn != 6 && turn > 6 && turn != 12)      // På väg tillbaka
             {
                 ratCharacter.ImageUrl = "../Images/råtta.png";
                 ratCharacter.Style.Add("left", "70%");
@@ -104,6 +103,17 @@ namespace CheesyGameTitle
             }
 
             cardImage.Visible = true;
+
+            if (turn == 6)
+            {
+                cardImage.Visible = false;
+            }
+
+            if (turn == 12)
+            {
+                cardImage.Visible = false;
+                GameOverWin();
+            }
         }
 
         public Character CreateCard(Character player)
@@ -146,6 +156,15 @@ namespace CheesyGameTitle
                 player = TrapCard(newCard, player);
             }
 
+            int playerHealth = player.getHealth();
+            int playerIntelligence = player.getIntelligence();
+            int playerStrength = player.getStrength();
+            int playerAgility = player.getAgility();
+            string playerName = player.getName();
+
+            statsBox.Text = "Namn: " + playerName + "<br />Hälsa: " + playerHealth + "<br />Styrka: " + playerStrength +
+                "<br />Smidighet: " + playerAgility + "<br />Intelligens: " + playerIntelligence;   // Stats
+
             return player;
         }
 
@@ -176,36 +195,22 @@ namespace CheesyGameTitle
             int playerAgility = player.getAgility();
             string playerName = player.getName();
 
-            // TODO: Tona ner bakgrund samt visa två kort
-
             do
             {
                 if (monsterIntelligence > monsterStrength && monsterIntelligence > monsterAgility)      // Int  
                 {
-                    MonsterBox.Text = monsterName + "<br />Hälsa: " + monsterHealth + "<br />Intelligens: " + monsterIntelligence;
-
-                    PlayerBox.Text = playerName + "<br />Hälsa: " + playerHealth + "<br />Intelligens: " + playerIntelligence;
-
                     monsterHighestAttribute = monsterIntelligence;
                     playerHighestAttribute = playerIntelligence;
                 }
 
                 else if (monsterStrength > monsterIntelligence && monsterStrength > monsterAgility)     // Str
                 {
-                    MonsterBox.Text = monsterName + "<br />Hälsa: " + monsterHealth + "<br />Styrka: " + monsterStrength;
-
-                    PlayerBox.Text = playerName + "<br />Hälsa: " + playerHealth + "<br />Styrka: " + playerStrength;
-
                     monsterHighestAttribute = monsterStrength;
                     playerHighestAttribute = playerStrength;
                 }
 
                 else if (monsterAgility > monsterIntelligence && monsterAgility > monsterStrength)      // Agi
                 {
-                    MonsterBox.Text = monsterName + "<br />Hälsa: " + monsterHealth + "<br />Smidighet: " + monsterAgility;
-
-                    PlayerBox.Text = playerName + "<br />Hälsa: " + playerHealth + "<br />Smidighet: " + playerAgility;
-
                     monsterHighestAttribute = monsterAgility;
                     playerHighestAttribute = playerAgility;
                 }
@@ -222,7 +227,7 @@ namespace CheesyGameTitle
                 monsterResult = monsterHighestAttribute + dice;
 
                 boxText = monsterName + " rullade " + dice + ". (" + monsterHighestAttribute + " + " + dice + " = " + monsterResult + ")";     // Monstrets tärningskast
-         //       CombatBox.Text = boxText; 
+  
 
                 System.Threading.Thread.Sleep(300);
 
@@ -231,47 +236,39 @@ namespace CheesyGameTitle
                 playerResult = playerHighestAttribute + dice;
 
                 boxText += "<br />" + playerName + " rullade " + dice + ". (" + playerHighestAttribute + " + " + dice + " = " + playerResult + ")";       // Spelarens tärningskast   
-          //      CombatBox.Text = boxText; 
 
                 if (monsterResult > playerResult)       // Monster vinner
                 {
                     playerHealth--;
+                    boxText += "<br /><b>" + playerName + " tog 1 skada och har nu " + playerHealth + " hälsa kvar.</b>";
 
                     if (playerHealth <= 0) // Om spelaren är död
                     {
                         GameOver();
-                    }
-
-                    else
-                    {
-                        // TODO: -1 bild
                     }
                 }
 
                 if (monsterResult < playerResult)       // Spelare vinner
                 {
                     monsterHealth--;
+                    boxText += "<br /><b>" + monsterName + " tog 1 skada och har nu " + monsterHealth + " hälsa kvar.</b>";
 
                     if (monsterHealth <= 0) // Om monster död
                     {
                         monsterHealth = 0;
-                        break;
-                    }
-
-                    else
-                    {
-                        // TODO: -1 bild
                     }
                 }
 
-                // ===== RESULTAT =======
+                if (monsterResult == playerResult)
+                {
+                    boxText += "<br /><b>Lika! Ingen tar skada.</b>";
+                }
 
-                // TODO: Lägg in -1 bild
-
-                CombatLog.Text += "<br /><b>Drag " + loops + "</b>:<br />" + boxText;
+                CombatLog.Text += "<br /><br /><b>Drag " + loops + "</b>:<br />" + boxText;
+                LabelRead.Text = CombatLog.Text.Replace(Environment.NewLine, "<BR/>");
 
                 loops++;
-            } while (playerHealth != 0);
+            } while (playerHealth != 0 && monsterHealth != 0);
 
             if (monsterHealth == 0)
             {
@@ -298,7 +295,7 @@ namespace CheesyGameTitle
             {
                 playerHealth = playerMaxHealth;
 
-                PlayerBox.Text = playerName + "<br />Hälsa: " + playerHealth;
+                PlayerBox.Text = playerName + " får full hälsa!";
             }
 
             if (code == 2)      // Möglig Ost
@@ -310,7 +307,7 @@ namespace CheesyGameTitle
                     playerHealth = 0;
                 }
 
-                PlayerBox.Text = playerName + "<br />Hälsa: " + playerHealth;
+                PlayerBox.Text = playerName + " -3 hälsa";
 
                 if (playerHealth <= 0)          // Om spelaren dog
                 {
@@ -322,21 +319,21 @@ namespace CheesyGameTitle
             {
                 playerStrength = playerStrength + 3;
 
-                PlayerBox.Text = playerName + "<br />Styrka: " + playerStrength;
+                PlayerBox.Text = playerName + " +3 styrka!";
             }
 
             if (code == 4)       // Kaffepulver
             {
                 playerAgility = playerAgility + 3;
 
-                PlayerBox.Text = playerName + "<br />Smidighet: " + playerAgility;
+                PlayerBox.Text = playerName + " +3 smidighet!";
             }
 
             if (code == 5)       // Broschyr
             {
                 playerIntelligence = playerIntelligence + 3;
 
-                PlayerBox.Text = playerName + "<br />Intelligens: " + playerIntelligence;
+                PlayerBox.Text = playerName + " +3 intelligens!";
             }
 
             player.setIntelligence(playerIntelligence);
@@ -373,8 +370,6 @@ namespace CheesyGameTitle
                     }
                 }
 
-                PlayerBox.Text = playerName + "<br />Hälsa: " + playerHealth + "<br />Styrka: " + playerStrength;
-
                 boxText = playerName + " rullade " + dice + ".";
                 CombatBox.Text = boxText;
 
@@ -396,8 +391,6 @@ namespace CheesyGameTitle
                     }
                 }
 
-                PlayerBox.Text = playerName + "<br />Hälsa: " + playerHealth + "<br />Smidighet: " + playerAgility;
-
                 boxText = playerName + " rullade " + dice + ".";
                 CombatBox.Text = boxText;
 
@@ -418,8 +411,6 @@ namespace CheesyGameTitle
                         playerHealth = 0;
                     }
                 }
-
-                PlayerBox.Text = playerName + "<br />Hälsa: " + playerHealth + "<br />Intelligens: " + playerIntelligence;
 
                 boxText = playerName + " rullade " + dice + ".";
                 CombatBox.Text = boxText;
@@ -489,9 +480,8 @@ namespace CheesyGameTitle
 
             Cheese prevObj = (Cheese)Session["CheeseObject"];
             ratCharacter.Style.Add("left", "70%");
-            
 
-            SCORE += CheeseRaid(prevObj);
+            GlobalScore.SCORE += CheeseRaid(prevObj);
             Session["CheeseObject"] = prevObj;
 
             
@@ -501,9 +491,21 @@ namespace CheesyGameTitle
         {
             Session["CheeseObject"] = null;
             Session["PrevObject"] = null;
-            SCORE = 0;
+            GlobalScore.SCORE = 0;
 
             Response.Redirect(Request.RawUrl);
+        }
+
+        public void GameOverWin()
+        {
+            StartButton.Visible = false;
+            RulesLink.Visible = false;
+            NewTurnButton.Visible = false;
+            CheeseButton.Visible = false;
+            RatButton.Visible = false;
+
+            CombatLog.Text = "GRATTIS! Du vann och fick " + GlobalScore.SCORE + " poäng!";
+            TryAgainButton.Visible = true;
         }
     }
 }

@@ -121,6 +121,15 @@ namespace CheesyGameTitle {
         protected global::System.Web.UI.WebControls.Image cardImage;
         
         /// <summary>
+        /// statsBox control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label statsBox;
+        
+        /// <summary>
         /// PlayerBox control.
         /// </summary>
         /// <remarks>
@@ -155,6 +164,15 @@ namespace CheesyGameTitle {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label CombatLog;
+        
+        /// <summary>
+        /// LabelRead control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label LabelRead;
         
         /// <summary>
         /// TryAgainButton control.

@@ -219,7 +219,7 @@ namespace CheesyGameTitle
                 if (randomMonster == 4)
                 {
                     name = "Irriterande Fluga";
-                    description = "Primär attribut: Smidighet, 6 poäng. \n Hälsa: 2";
+                    description = "Primär attribut: Smidighet, 6 poäng. \n Hälsa: 1";
                     intelligence = 0;
                     agility = 6;
                     strength = 0;

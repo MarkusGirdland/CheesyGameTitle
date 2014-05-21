@@ -6,12 +6,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head id="Head1" runat="server">
-    <title>Min</title>
+    <title>Cheesy Game Title!</title>
 </head>
 <body id="body" runat="server" class="body"> 
         <form id="form1" runat="server" submitdisabledcontrols="True" visible="True">
-
-        <h1>Cheesy Game Title</h1>
             <asp:HyperLink ID="RulesLink" runat="server" NavigateUrl="~/Rules.aspx">Rules</asp:HyperLink>
             <asp:ImageButton CSSclass="mybtn" ID="StartButton" runat="server" OnClick="StartButton_Click" ImageUrl="~/Images/start.jpg" /> 
 
@@ -28,22 +26,29 @@
 
                 <asp:Image ID="cardImage" runat="server" ImageUrl="~/Images/kort.png" Visible="false"/>
             </div>
+           
+            <div class="charStats" runat="server">
+                <asp:Label ID="statsBox" runat="server"></asp:Label>
+            </div>
 
             <br />
             <br />
 
-            <asp:Label ID="PlayerBox" runat="server"></asp:Label>
-            <br />
-            <br />
-            <asp:Label ID="MonsterBox" runat="server"></asp:Label>
-            <br />
-            <br />
+            <div class="LeftScreen" runat="server">
+                <asp:Label ID="PlayerBox" runat="server"></asp:Label>
+                <br />
+                <br />
+                <asp:Label ID="MonsterBox" runat="server"></asp:Label>
+                <br />
+                <br />
 
-            <asp:Label ID="CombatBox" runat="server"></asp:Label>
-            <br />
-            <br />
-            <asp:Label ID="CombatLog" runat="server"></asp:Label>
-            <br />
+                <asp:Label ID="CombatBox" runat="server"></asp:Label>
+                <br />
+                <br />
+                <asp:Label ID="CombatLog" runat="server"></asp:Label>
+                <asp:Label ID="LabelRead" runat="server"></asp:Label>
+                <br />
+            </div>
 
             <asp:ImageButton ID="TryAgainButton" runat="server" Visible="false" OnClick="TryAgainButton_Click" ImageUrl="~/Images/tryAgain.jpg" CssClass="mybtn" />
 

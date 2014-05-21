@@ -128,6 +128,7 @@
     <Content Include="Images\KommerSnart.jpg" />
     <Content Include="Images\kort.png" />
     <Content Include="Images\NewTurn.png" />
+    <Content Include="Images\NewTurn50.jpg" />
     <Content Include="Images\PlaceHolder.jpg" />
     <Content Include="Images\råtta.png" />
     <Content Include="Images\råttaFramåt.png" />
@@ -149,6 +150,7 @@
     <Compile Include="Model\Card.cs" />
     <Compile Include="Model\Character.cs" />
     <Compile Include="Model\Cheese.cs" />
+    <Compile Include="Model\GlobalScore.cs" />
     <Compile Include="Model\Score.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Rules.aspx.cs">
