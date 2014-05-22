@@ -46,6 +46,11 @@ namespace CheesyGameTitle
 
         // ============== Access ===================
 
+        public string getImage()
+        {
+            return image;
+        }
+
         public int GetHealth()
         {
             return health;
@@ -126,6 +131,7 @@ namespace CheesyGameTitle
                 name = "Tomt";
                 description = "Absolut ingenting...";
                 actionCode = 0;
+                image = "~/Images/tomtKort.png";
             }
 
             // ===== Föremål =====
@@ -144,34 +150,39 @@ namespace CheesyGameTitle
                     name = "Helande Ost";
                     description = "Din karaktär får full hälsa.";
                     actionCode = 1;
+                    image = "~/Images/helandeKort.png";
                 }
 
                 if (randomItem == 2)
                 {
-                    name = "Mögligt Ost";
+                    name = "Möglig Ost";
                     description = "Din karaktär förlorar 3 hälsa.";
                     actionCode = 2;
+                    image = "~/Images/mögligKort.png";
                 }
 
                 if (randomItem == 3)
                 {
-                    name = "Marsvinspellets Med Extra C-vitamin";
+                    name = "Marsvinspellets";
                     description = "Din karaktär får 3 styrka.";
                     actionCode = 3;
+                    image = "~/Images/pelletsKort.png";
                 }
 
                 if (randomItem == 4)
                 {
-                    name = "Spillt Kaffepulver";
+                    name = "Kaffepulver";
                     description = "Din karaktär får 3 smidighet.";
                     actionCode = 4;
+                    image = "~/Images/kaffeKort.png";
                 }
 
                 if (randomItem == 5)
                 {
-                    name = "Broschyr Från Linnéuniversitetet";
+                    name = "Intelligent Text";
                     description = "Din karaktär får 3 intelligens.";
                     actionCode = 5;
+                    image = "~/Images/broschyrKort.png";
                 }
             }
 
@@ -194,6 +205,7 @@ namespace CheesyGameTitle
                     agility = 0;
                     strength = 4;
                     health = 3;
+                    image = "~/Images/ratKort.png";
                 }
 
                 if (randomMonster == 2)
@@ -204,6 +216,7 @@ namespace CheesyGameTitle
                     agility = 0;
                     strength = 5;
                     health = 4;
+                    image = "~/Images/marsvinKort.png";
                 }
 
                 if (randomMonster == 3)
@@ -214,6 +227,7 @@ namespace CheesyGameTitle
                     agility = 4;
                     strength = 0;
                     health = 2;
+                    image = "~/Images/rivMusKort.png";
                 }
 
                 if (randomMonster == 4)
@@ -224,6 +238,7 @@ namespace CheesyGameTitle
                     agility = 6;
                     strength = 0;
                     health = 1;
+                    image = "~/Images/flugaKort.png";
                 }
 
                 if (randomMonster == 5)
@@ -234,6 +249,7 @@ namespace CheesyGameTitle
                     agility = 0;
                     strength = 0;
                     health = 5;
+                    image = "~/Images/crowKort.png";
                 }
 
                 if (randomMonster == 6)
@@ -244,6 +260,7 @@ namespace CheesyGameTitle
                     agility = 0;
                     strength = 0;
                     health = 2;
+                    image = "~/Images/einsteinKort.png";
                 }
             }
 
@@ -262,6 +279,7 @@ namespace CheesyGameTitle
                     name = "Musfälla";
                     description = "Du går in i musfällan och tar 4 skada. Om du slår under eller lika med din styrka lyckas du böja bort fällan.";
                     actionCode = 6;
+                    image = "~/Images/trapKort.png";
                 }
 
                 if (randomTrap == 2)
@@ -269,6 +287,7 @@ namespace CheesyGameTitle
                     name = "Kvast-attack!";
                     description = "Du blir slagen av en kvast och tar 4 skada. Om du slår under eller lika med din smidighet lyckas du undvika attacken.";
                     actionCode = 7;
+                    image = "~/Images/kvastKort.png";
                 }
 
                 if (randomTrap == 3)
@@ -276,6 +295,7 @@ namespace CheesyGameTitle
                     name = "Råttgift";
                     description = "Du är dum nog att äta råttgift och tar 4 skada. Om du slår under eller lika med din intelligens kommer du på bättre tankar.";
                     actionCode = 8;
+                    image = "~/Images/giftKort.png";
                 }
             }
         }

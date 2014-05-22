@@ -165,6 +165,7 @@ namespace CheesyGameTitle
             statsBox.Text = "Namn: " + playerName + "<br />Hälsa: " + playerHealth + "<br />Styrka: " + playerStrength +
                 "<br />Smidighet: " + playerAgility + "<br />Intelligens: " + playerIntelligence;   // Stats
 
+            cardImage.ImageUrl = newCard.getImage();
             return player;
         }
 

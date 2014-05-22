@@ -10,18 +10,18 @@
 </head>
 <body id="body" runat="server" class="body"> 
         <form id="form1" runat="server" submitdisabledcontrols="True" visible="True">
-            <asp:HyperLink ID="RulesLink" runat="server" NavigateUrl="~/Rules.aspx">Rules</asp:HyperLink>
-            <asp:ImageButton CSSclass="mybtn" ID="StartButton" runat="server" OnClick="StartButton_Click" ImageUrl="~/Images/start.jpg" /> 
+            <asp:HyperLink ID="RulesLink" runat="server" NavigateUrl="~/Rules.aspx">Läs reglerna!</asp:HyperLink>
+            <asp:ImageButton CSSclass="startButton" ID="StartButton" runat="server" OnClick="StartButton_Click" ImageUrl="~/Images/startButton.png" /> 
 
-            <asp:ImageButton CSSClass="charbtn" ID="RatButton" runat="server" ImageUrl="~/Images/PlaceHolder.jpg" OnClick="RatButton_Click" />
-            <asp:ImageButton CSSClass="charbtn" ID="MouseButton" runat="server" Enabled="false" ImageUrl="~/Images/KommerSnart.jpg" Visible="False" />
+            <asp:ImageButton CSSClass="charbtn" ID="RatButton" runat="server" ImageUrl="~/Images/martinMus.png" OnClick="RatButton_Click" />
+            <asp:ImageButton CSSClass="charbtn" ID="MouseButton" runat="server" Enabled="false" ImageUrl="~/Images/kommerSnart.png" Visible="False" />
 
-            <asp:ImageButton ID="NewTurnButton" runat="server" Visible="false" OnClick="NewTurn_Click" ImageUrl="~/Images/NewTurn.png" CssClass="mybtn" />
-            <asp:ImageButton ID="CheeseButton" runat="server" Visible="false" OnClick="CheeseButton_Click" ImageUrl="~/Images/Attack.jpg" CssClass="mybtn" />
+            <asp:ImageButton ID="NewTurnButton" runat="server" Visible="false" OnClick="NewTurn_Click" ImageUrl="~/Images/nyttDrag.png" CssClass="mybtn" />
+            <asp:ImageButton ID="CheeseButton" runat="server" Visible="false" OnClick="CheeseButton_Click" ImageUrl="~/Images/ostKnapp.png" CssClass="mybtn" />
 
             <div class="cardDiv" runat="server">
 
-                <asp:Label ID="CardHeader" runat="server"></asp:Label>
+                <asp:Label CssClass="CardHeaderClass" ID="CardHeader" runat="server"></asp:Label>
                 <asp:Label ID="CardText" runat="server"></asp:Label>
 
                 <asp:Image ID="cardImage" runat="server" ImageUrl="~/Images/kort.png" Visible="false"/>
@@ -50,7 +50,7 @@
                 <br />
             </div>
 
-            <asp:ImageButton ID="TryAgainButton" runat="server" Visible="false" OnClick="TryAgainButton_Click" ImageUrl="~/Images/tryAgain.jpg" CssClass="mybtn" />
+            <asp:ImageButton ID="TryAgainButton" runat="server" Visible="false" OnClick="TryAgainButton_Click" ImageUrl="~/Images/gameOver.png" CssClass="gameOver" />
 
             <script src="Scripts/JavaScript.js" type="text/javascript"></script>
         

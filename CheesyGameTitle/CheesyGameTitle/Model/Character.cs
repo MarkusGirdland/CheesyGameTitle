@@ -90,7 +90,7 @@ namespace CheesyGameTitle
                 intelligence = 2;
                 health = 10;
                 maxHealth = 10;
-                name = "Roger Råtta";
+                name = "Martin Mus";
             }
 
             else
