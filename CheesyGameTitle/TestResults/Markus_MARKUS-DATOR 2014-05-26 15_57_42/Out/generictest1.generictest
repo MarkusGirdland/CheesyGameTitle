@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<GenericTest name="GenericTest1" storage="c:\users\markus\documents\github\cheesygametitle\cheesygametitle\whiteboxtest\generictest1.generictest" id="960fd984-8a4b-400d-92dc-47d620658ce2" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <DeploymentItems>
+    <DeploymentItem filename="WhiteBoxTest\obj\Debug\WhiteBoxTest.dll" />
+  </DeploymentItems>
+  <Command filename="MyTest.exe" workingDirectory="%TestOutputDirectory%" />
+  <SummaryXmlFile enabled="true" path="%TestOutputDirectory%\ResultAvTest" />
+</GenericTest>
