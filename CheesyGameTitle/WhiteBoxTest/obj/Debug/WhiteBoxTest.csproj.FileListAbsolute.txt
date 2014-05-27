@@ -1,0 +1,6 @@
+C:\Users\Markus\Documents\GitHub\CheesyGameTitle\CheesyGameTitle\WhiteBoxTest\bin\Debug\WhiteBoxTest.dll
+C:\Users\Markus\Documents\GitHub\CheesyGameTitle\CheesyGameTitle\WhiteBoxTest\bin\Debug\WhiteBoxTest.pdb
+C:\Users\Markus\Documents\GitHub\CheesyGameTitle\CheesyGameTitle\WhiteBoxTest\obj\Debug\WhiteBoxTest.csprojResolveAssemblyReference.cache
+C:\Users\Markus\Documents\GitHub\CheesyGameTitle\CheesyGameTitle\WhiteBoxTest\obj\Debug\WhiteBoxTest.dll
+C:\Users\Markus\Documents\GitHub\CheesyGameTitle\CheesyGameTitle\WhiteBoxTest\obj\Debug\WhiteBoxTest.pdb
+C:\Users\Markus\Documents\GitHub\CheesyGameTitle\CheesyGameTitle\WhiteBoxTest\bin\Debug\GenericTest1.GenericTest
