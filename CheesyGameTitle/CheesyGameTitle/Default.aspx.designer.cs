@@ -166,13 +166,13 @@ namespace CheesyGameTitle {
         protected global::System.Web.UI.WebControls.Label CombatLog;
         
         /// <summary>
-        /// LabelRead control.
+        /// TooSmallMessage control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label LabelRead;
+        protected global::System.Web.UI.WebControls.Label TooSmallMessage;
         
         /// <summary>
         /// TryAgainButton control.

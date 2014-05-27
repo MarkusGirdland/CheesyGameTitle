@@ -3,6 +3,16 @@
     height: 150px;
 }
 
+.boxStyle {
+    font-family:Verdana;
+    color: #545454;
+}
+
+.logStyle {
+    font-family:Verdana;
+    color: #545454;
+}
+
 .gameOver {
     width: 150px;
     height: 150px;
@@ -32,13 +42,18 @@
     overflow: auto;
 }
 
+body, html {
+    height: 100%;
+    width: 100%;
+}
+
 #statsBox {
     top: 3%;
     right: 5%;
     position: absolute;
 }
 
-#ratCharacter {
+.ratCharacter {
     height: 150px;
     width: 200px;
     top: 35%;
@@ -94,6 +109,10 @@ text-align: center;
 z-index: 2;
 }
 
+.tooSmall {
+    display:none;
+}
+
 .cardDiv:hover {
 -webkit-transform: rotate(360deg) scale(2);
 -moz-transform: rotate(360deg) scale(2);
@@ -136,4 +155,91 @@ to   { opacity: 1; }
     margin-left: 30%;
     margin-top: 15%;
     z-index: 5;
+}
+
+@media only screen and (min-width: 1px) and (max-width: 1599px) {
+    .tooSmall {
+        display:block;
+    }
+}
+
+@media only screen and (min-width: 1500px) and (max-width: 1599px) {
+    .ratCharacter {
+        height: 150px;
+        width: 200px;
+        top: 35%;
+        left: 1%;
+        position: absolute;
+        z-index: 1;
+    }
+}
+
+@media only screen and (min-width: 1600px) and (max-width: 1829px) {
+    .ratCharacter {
+    height: 150px;
+    width: 200px;
+    top: 35%;
+    left: 3%;
+    position: absolute;
+    z-index: 1;
+}
+}
+
+@media only screen and (min-width: 1830px) and (max-width: 1995px) {
+
+}
+
+@media only screen and (min-width: 1996px) and (max-width: 2150px) {
+    .ratCharacter {
+    height: 150px;
+    width: 200px;
+    top: 35%;
+    left: 9%;
+    position: absolute;
+    z-index: 1;
+}
+}
+
+@media only screen and (min-width: 2151px) and (max-width: 2300px) {
+    .ratCharacter {
+    height: 150px;
+    width: 200px;
+    top: 35%;
+    left: 12%;
+    position: absolute;
+    z-index: 1;
+}
+}
+
+@media only screen and (min-width: 2301px) and (max-width: 2500px) {
+    .ratCharacter {
+    height: 150px;
+    width: 200px;
+    top: 35%;
+    left: 16%;
+    position: absolute;
+    z-index: 1;
+}
+}
+
+@media only screen and (min-width: 2501px) and (max-width: 2700px) {
+    .ratCharacter {
+    height: 150px;
+    width: 200px;
+    top: 35%;
+    left: 18%;
+    position: absolute;
+    z-index: 1;
+}
+}
+
+@media only screen and (min-width: 2701px) and (max-width: 2900px) {
+    .ratCharacter {
+    height: 150px;
+    width: 200px;
+    top: 35%;
+    left: 22%;
+    position: absolute;
+    z-index: 1;
+}
 }

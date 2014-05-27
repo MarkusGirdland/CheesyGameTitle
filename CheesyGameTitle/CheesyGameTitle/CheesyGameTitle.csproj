@@ -156,6 +156,7 @@
     <Content Include="Images\trapKort.png" />
     <Content Include="Images\tryAgain.jpg" />
     <Content Include="Rules.aspx" />
+    <Content Include="RuleStyle.css" />
     <Content Include="Scripts\JavaScript.js" />
     <Content Include="Style.css" />
     <Content Include="Web.config" />

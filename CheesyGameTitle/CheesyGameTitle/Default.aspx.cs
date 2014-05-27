@@ -49,6 +49,8 @@ namespace CheesyGameTitle
             NewTurnButton.Visible = true;
             CheeseButton.Visible = false;
 
+            NewTurnButton.Attributes.Add("onclick", "javascript:" + NewTurnButton.ClientID + ".disabled=true;" + ClientScript.GetPostBackEventReference(NewTurnButton, ""));
+
             if (Session["PrevObject"] == null)
             {
                 // Skapa karaktär 1 och läs in stats
@@ -56,9 +58,8 @@ namespace CheesyGameTitle
                 Session["PrevObject"] = player;
             }
 
-            Character prevObj = (Character)Session["PrevObject"];
 
-            // TODO: Disable newTurn knapp samt visa det visuellt
+            Character prevObj = (Character)Session["PrevObject"];
 
             prevObj.plusTurn();
 
@@ -66,6 +67,7 @@ namespace CheesyGameTitle
 
             if (turn == 6)          // På ostrutan
             {
+                CombatLog.Text = "Katten sover framför ostskafferiet. Det är en 10% risk att katten vaknar.";
                 CheeseButton.Visible = true;
                 ratCharacter.Style.Add("left", "70%");
             }
@@ -171,7 +173,6 @@ namespace CheesyGameTitle
 
         public void EmptyCard()
         {
-            // TODO: Visa kortet som dras
         }
 
         public Character MonsterCard(Card newCard, Character player)
@@ -266,7 +267,7 @@ namespace CheesyGameTitle
                 }
 
                 CombatLog.Text += "<br /><br /><b>Drag " + loops + "</b>:<br />" + boxText;
-                LabelRead.Text = CombatLog.Text.Replace(Environment.NewLine, "<BR/>");
+               // LabelRead.Text = CombatLog.Text.Replace(Environment.NewLine, "<BR/>");
 
                 loops++;
             } while (playerHealth != 0 && monsterHealth != 0);
@@ -439,6 +440,7 @@ namespace CheesyGameTitle
 
             if (catWakes <= (timesCalled * 10))
             {
+                CombatLog.Text = "Katten vaknade och dödade dig innan du hann säga 'pip'!";
                 GameOver();
             }
 
@@ -505,7 +507,7 @@ namespace CheesyGameTitle
             CheeseButton.Visible = false;
             RatButton.Visible = false;
 
-            CombatLog.Text = "GRATTIS! Du vann och fick " + GlobalScore.SCORE + " poäng!";
+            CombatLog.Text = "GRATTIS! Du överlevde och fick " + GlobalScore.SCORE + " poäng!";
             TryAgainButton.Visible = true;
         }
     }
